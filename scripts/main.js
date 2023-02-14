@@ -3,10 +3,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/chrome.jpg") {
-    myImage.setAttribute("src", "images/chrome2.jpg");
+  if (mySrc === "Images/chrome.jpg") {
+    myImage.setAttribute("src", "Images/chrome2.jpg");
   } else {
-    myImage.setAttribute("src", "images/chrome.jpg");
+    myImage.setAttribute("src", "Images/chrome.jpg");
   }
 };
 // Personalized welcome message code
