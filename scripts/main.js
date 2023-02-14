@@ -3,10 +3,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "Images/chrome.jpg") {
-    myImage.setAttribute("src", "Images/chrome2.jpg");
+  if (mySrc === "Images/we.jpg") {
+    myImage.setAttribute("src", "Images/we2.jpg");
   } else {
-    myImage.setAttribute("src", "Images/chrome.jpg");
+    myImage.setAttribute("src", "Images/we.jpg");
   }
 };
 // Personalized welcome message code
@@ -16,13 +16,13 @@ let myHeading = document.querySelector("h1");
 function setUserName() {
   const myName = prompt("Please enter your name.");
   localStorage.setItem("name", myName);
-  myHeading.textContent = `Chrome is cool, ${myName}`;
+  myHeading.textContent = `MVP loves you, ${myName}`;
 }
 if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Chrome is cool, ${storedName}`;
+  myHeading.textContent = `MVP loves you, ${storedName}`;
 }
 myButton.onclick = () => {
   setUserName();
@@ -33,6 +33,6 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Chrome is cool, ${myName}`;
+    myHeading.textContent = `MVP loves you, ${myName}`;
   }
 }
